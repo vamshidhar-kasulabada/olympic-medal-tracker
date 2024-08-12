@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 1340px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  
+    text-align: center;
+    color: #333;
+    border-bottom: 3px solid #3498db;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  #search {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .view-toggle {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  .view-toggle i {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .view-toggle i.active {
+    color: #007bff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  th:hover {
+    background-color: #e0e0e0;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .sort-icon::after {
+    content: '\25B2';
+    position: absolute;
+    right: 8px;
+    color: #999;
+  }
+  
+  .sort-icon.desc::after {
+    content: '\25BC';
+  }
+  
+  .sort-icon.active::after {
+    color: #333;
+  }
+  
+  .card-view {
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 280px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    transform: rotate(45deg);
+    z-index: 0;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #333;
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .rank {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card .medals {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card .medal {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .card .medal:hover {
+    transform: scale(1.1);
+  }
+  
+  .card .medal-icon {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  
+  .card .medal-count {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card .medal-type {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card .total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #28a745;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .gold {
+    color: #FFD700;
+  }
+  
+  .silver {
+    color: #C0C0C0;
+  }
+  
+  .bronze {
+    color: #CD7F32;
+  }

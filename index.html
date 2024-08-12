@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Medals Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Paris Olympic 2024 Medals Dashboard</h1>
+        <input type="text" id="search" placeholder="Search by country name...">
+        <div class="view-toggle">
+            <i class="fas fa-table active" id="table-view-icon"></i>
+            <i class="fas fa-th-large" id="card-view-icon"></i>
+        </div>
+        <div id="table-view">
+            <table id="medals-table">
+                <thead>
+                  <tr>
+                    <th data-sort="serial">S.No</th>
+                    <th data-sort="country">Country</th>
+                    <th data-sort="rank">Rank</th>
+                    <th data-sort="gold">Gold <i class="fas fa-medal gold"></i></th>
+                    <th data-sort="silver">Silver <i class="fas fa-medal silver"></i></th>
+                    <th data-sort="bronze">Bronze <i class="fas fa-medal bronze"></i></th>
+                    <th data-sort="total">Total</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+        </div>
+        <div id="card-view" class="card-view"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
